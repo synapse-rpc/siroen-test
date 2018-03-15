@@ -1,0 +1,5 @@
+{
+    "require": {
+        "synapse-rpc/siroen": "^1.4"
+    }
+}
