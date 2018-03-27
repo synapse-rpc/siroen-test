@@ -20,11 +20,11 @@ if (!isset($opts['host']) or !isset($opts['user']) or !isset($opts['pass']) or !
     exit;
 }
 $app = new Synapse();
-$app->sys_name = 'simcu';
+$app->sys_name = $opts['sys_name'];
 $app->app_name = 'php';
-$app->mq_host = 'code.simcu.ltd';
-$app->mq_user = 'simcu';
-$app->mq_pass = 'Love@0709';
+$app->mq_host = $opts['host'];
+$app->mq_user = $opts['user'];
+$app->mq_pass = $opts['pass'];
 if (isset($opts['debug'])) {
     $app->debug = true;
 }
